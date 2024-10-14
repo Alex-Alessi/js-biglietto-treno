@@ -39,12 +39,14 @@ if (isKmDaPercorrereValid && isEtàValid) {
   if (età < 18) {
     //*     applico lo sconto del 20% alla variabile
     costoBiglietto = costoBiglietto - (20 * costoBiglietto) / 100;
+    alert("Il biglietto è soggetto al 20% di sconto!");
   }
 
   //* ALTRIMENTI SE l'età è superiore a 65
   else if (età > 65) {
     //*     applico lo sconto del 40% alla variabile
     costoBiglietto = costoBiglietto - (40 * costoBiglietto) / 100;
+    alert("Il biglietto è soggetto al 40% di sconto!");
   }
 
   //* ALTRIMENTI
