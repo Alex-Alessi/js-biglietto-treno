@@ -23,7 +23,6 @@ if (!isKmDaPercorrereValid) {
 //* chiedo l'età del passeggero
 //approssimo l'età così da avere un intero
 const età = Math.floor(parseInt(prompt("Inserisci la tua età: ")));
-console.log(età);
 
 //* verifico che sia valida
 const isEtàValid = !isNaN(età) && età > 0 && età < 150;
@@ -33,6 +32,7 @@ if (!isEtàValid) {
 
 //! ELABORAZIONE
 //* creo una variabile costoBiglietto e calcolo il prezzo del biglietto
+let costoBiglietto = 0.21 * kmDaPercorrere;
 
 //* SE l'età è inferiore a 18
 //*     applico lo sconto del 20% alla variabile
